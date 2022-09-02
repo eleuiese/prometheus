@@ -1,0 +1,8 @@
+FROM prom/prometheus:latest
+ADD ./prometheus.yml /etc/prometheus/
+RUN config.file=/etc/prometheus/prometheus.yml
+RUN storage.tsdb.path=/prometheus
+RUN web.console.libraries=/etc/prometheus/console_libraries
+RUN web.console.templates=/etc/prometheus/consoles
+RUN web.enable-lifecycle
+EXPOSE 9090

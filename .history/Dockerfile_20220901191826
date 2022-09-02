@@ -1,0 +1,7 @@
+FROM prom/prometheus:latest
+ADD ./prometheus.yml /etc/prometheus/
+CMD        [ "--config.file=/etc/prometheus/prometheus.yml"]
+CMD        ["--storage.local.path=/prometheus"]
+CMD        ["--web.console.libraries=/etc/prometheus/console_libraries"]
+CMD        ["--web.console.templates=/etc/prometheus/consoles"]
+EXPOSE 9090
