@@ -4,7 +4,7 @@ name: Pipeline Prometheus
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   promapp:
