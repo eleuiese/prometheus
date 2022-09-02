@@ -5,7 +5,7 @@ scrape_configs:
   
   - job_name: "node"
     static_configs:
-    - targets: ["52.15.115.243:9100"]
+    - targets: ["app.dev.eleuieselabs.de:9100"]
 
 remote_write:
 - url: https://prometheus-prod-10-prod-us-central-0.grafana.net/api/prom/push
