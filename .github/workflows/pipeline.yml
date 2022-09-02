@@ -9,7 +9,7 @@ on:
 jobs:
   promapp:
     timeout-minutes: 15
-    name: 'Promapp'
+    name: 'Prom-app'
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.TF_GITHUB_TOKEN }}
