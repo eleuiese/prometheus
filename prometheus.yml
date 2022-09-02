@@ -5,7 +5,7 @@ scrape_configs:
   
   - job_name: "node"
     static_configs:
-    - targets: ["node-exporter:9100"]
+    - targets: ["3.22.68.65:9100/metrics"]
 
 remote_write:
 - url: https://prometheus-prod-10-prod-us-central-0.grafana.net/api/prom/push
