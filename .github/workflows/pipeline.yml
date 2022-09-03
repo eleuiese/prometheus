@@ -8,7 +8,7 @@ on:
 
 jobs:
   promapp:
-    timeout-minutes: 15
+    timeout-minutes: 14
     name: 'Prom-app'
     runs-on: ubuntu-latest
     env:
